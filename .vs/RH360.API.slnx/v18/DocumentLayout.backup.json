@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\leona\\source\\repos\\RH360.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6130BC6C-58A7-4963-9B01-8EC8D4412E74}|RH360.Application\\RH360.Application.csproj|c:\\users\\leona\\source\\repos\\rh360.api\\rh360.application\\users\\getuserbyid\\getuserbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6130BC6C-58A7-4963-9B01-8EC8D4412E74}|RH360.Application\\RH360.Application.csproj|solutionrelative:rh360.application\\users\\getuserbyid\\getuserbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6130BC6C-58A7-4963-9B01-8EC8D4412E74}|RH360.Application\\RH360.Application.csproj|c:\\users\\leona\\source\\repos\\rh360.api\\rh360.application\\users\\getuserbyid\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6130BC6C-58A7-4963-9B01-8EC8D4412E74}|RH360.Application\\RH360.Application.csproj|solutionrelative:rh360.application\\users\\getuserbyid\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF8D9C6E-E7B7-C07C-FC4C-7B2E9D2B318D}|RH360.API\\RH360.API.csproj|c:\\users\\leona\\source\\repos\\rh360.api\\rh360.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF8D9C6E-E7B7-C07C-FC4C-7B2E9D2B318D}|RH360.API\\RH360.API.csproj|solutionrelative:rh360.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6130BC6C-58A7-4963-9B01-8EC8D4412E74}|RH360.Application\\RH360.Application.csproj|c:\\users\\leona\\source\\repos\\rh360.api\\rh360.application\\users\\updateuser\\updateuserpasswordcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6130BC6C-58A7-4963-9B01-8EC8D4412E74}|RH360.Application\\RH360.Application.csproj|solutionrelative:rh360.application\\users\\updateuser\\updateuserpasswordcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6130BC6C-58A7-4963-9B01-8EC8D4412E74}|RH360.Application\\RH360.Application.csproj|c:\\users\\leona\\source\\repos\\rh360.api\\rh360.application\\users\\updateuser\\updateusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6130BC6C-58A7-4963-9B01-8EC8D4412E74}|RH360.Application\\RH360.Application.csproj|solutionrelative:rh360.application\\users\\updateuser\\updateusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetUserByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\source\\repos\\RH360.API\\RH360.Application\\Users\\GetUserById\\GetUserByIdQuery.cs",
+              "RelativeDocumentMoniker": "RH360.Application\\Users\\GetUserById\\GetUserByIdQuery.cs",
+              "ToolTip": "C:\\Users\\leona\\source\\repos\\RH360.API\\RH360.Application\\Users\\GetUserById\\GetUserByIdQuery.cs",
+              "RelativeToolTip": "RH360.Application\\Users\\GetUserById\\GetUserByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T17:26:48.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetUserByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\source\\repos\\RH360.API\\RH360.Application\\Users\\GetUserById\\GetUserByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "RH360.Application\\Users\\GetUserById\\GetUserByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\leona\\source\\repos\\RH360.API\\RH360.Application\\Users\\GetUserById\\GetUserByIdQueryHandler.cs",
+              "RelativeToolTip": "RH360.Application\\Users\\GetUserById\\GetUserByIdQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T17:26:27.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\source\\repos\\RH360.API\\RH360.API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "RH360.API\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\leona\\source\\repos\\RH360.API\\RH360.API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "RH360.API\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAASwD8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T17:25:59.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateUserPasswordCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\source\\repos\\RH360.API\\RH360.Application\\Users\\UpdateUser\\UpdateUserPasswordCommandValidator.cs",
+              "RelativeDocumentMoniker": "RH360.Application\\Users\\UpdateUser\\UpdateUserPasswordCommandValidator.cs",
+              "ToolTip": "C:\\Users\\leona\\source\\repos\\RH360.API\\RH360.Application\\Users\\UpdateUser\\UpdateUserPasswordCommandValidator.cs",
+              "RelativeToolTip": "RH360.Application\\Users\\UpdateUser\\UpdateUserPasswordCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T17:25:18.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateUserCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\source\\repos\\RH360.API\\RH360.Application\\Users\\UpdateUser\\UpdateUserCommandValidator.cs",
+              "RelativeDocumentMoniker": "RH360.Application\\Users\\UpdateUser\\UpdateUserCommandValidator.cs",
+              "ToolTip": "C:\\Users\\leona\\source\\repos\\RH360.API\\RH360.Application\\Users\\UpdateUser\\UpdateUserCommandValidator.cs",
+              "RelativeToolTip": "RH360.Application\\Users\\UpdateUser\\UpdateUserCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T17:25:02.538Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
