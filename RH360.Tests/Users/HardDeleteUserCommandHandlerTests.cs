@@ -1,19 +1,19 @@
-﻿using FluentAssertions;
-using RH360.Application.Users.DeleteUser;
+﻿using RH360.Application.Users.DeleteUser;
 using RH360.Domain.Entities;
 using RH360.Infrastructure.Data.Context;
+using RH360.Infrastructure.Exceptions;
 
 namespace RH360.Tests.Users
 {
-    public class DeleteUserCommandHandlerTests
+    public class HardDeleteUserCommandHandlerTests
     {
         // Using xUnit
 
         [Fact]
-        public async Task Should_Soft_Delete_User()
+        public async Task Should_Hard_Delete_User()
         {
             // Arrange
-            var db = DbContextHelper.CreateInMemoryDbContext("DeleteUserTestDb");
+            var db = DbContextHelper.CreateInMemoryDbContext("HardDeleteUserTestDb");
 
             var user = new User
             {
@@ -39,23 +39,24 @@ namespace RH360.Tests.Users
 
             var deleted = await db.Users.FindAsync(user.Id);
 
-            Assert.NotEqual(null!, deleted!.DeletedAt);
+            Assert.Equal(null!, deleted);
         }
 
-        // Using fluentAssertions
-
         [Fact]
-        public async Task Should_Return_False_When_User_Not_Found()
+        public async Task Should_Throw_IdNotFoundException_When_User_Not_Found()
         {
-            var db = DbContextHelper.CreateInMemoryDbContext("DeleteUserNotFoundTestDb");
+            // Arrange
+            var db = DbContextHelper.CreateInMemoryDbContext("HardDeleteUserTestDb");
 
             var handler = new HardDeleteUserCommandHandler(db);
 
-            var command = new HardDeleteUserCommand(123);
+            // Id inexistente
+            var command = new HardDeleteUserCommand(999);
 
-            var result = await handler.Handle(command, CancellationToken.None);
-
-            result.Should().BeFalse();
+            // Act + Assert
+            await Assert.ThrowsAsync<IdNotFoundException>(() =>
+                handler.Handle(command, CancellationToken.None)
+            );
         }
     }
 }

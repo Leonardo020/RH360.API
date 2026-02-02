@@ -58,7 +58,7 @@ namespace RH360.API.Controllers
                 throw new Exception("Error on update user");
         }
 
-        [HttpPatch("{id}")]
+        [HttpPatch("password/{id}")]
         public async Task<IActionResult> UpdatePassword(int id, UpdateUserPasswordCommand cmd)
         {
             if (id != cmd.Id)
@@ -71,14 +71,25 @@ namespace RH360.API.Controllers
                 throw new Exception("Error on update user");
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+
+        [HttpDelete("hard/{id}")]
+        public async Task<IActionResult> HardDelete(int id)
         {
             var ok = await Mediator.Send(new HardDeleteUserCommand(id));
 
+            return ok ?
+                NoContent() :
+                throw new Exception("Error on hard delete user");
+        }
+
+        [HttpDelete("soft/{id}")]
+        public async Task<IActionResult> SoftDelete(int id)
+        {
+            var ok = await Mediator.Send(new SoftDeleteUserCommand(id));
+
             return ok ? 
                 NoContent() : 
-                throw new Exception("Error on delete user");
+                throw new Exception("Error on soft delete user");
         }
     }
 

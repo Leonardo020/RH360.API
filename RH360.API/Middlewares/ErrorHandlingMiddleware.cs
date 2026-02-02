@@ -1,6 +1,9 @@
 ﻿using FluentValidation;
-using RH360.API.Exceptions;
+using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using RH360.Domain.Extensions;
+using RH360.Infrastructure.Exceptions;
+using System.Data.Common;
 using System.Net;
 using System.Text.Json;
 
@@ -33,10 +36,20 @@ namespace RH360.API.Middlewares
 
             switch (ex)
             {
+                case DbUpdateException dbUpdateException :
+                    context.Response.StatusCode = StatusCodes.Status422UnprocessableEntity;
+                    
+                    var message = $"{dbUpdateException.Message} ${dbUpdateException.InnerException?.Message ?? string.Empty}";
+                    var dbUpdateExceptionResponse = message.ToError();
+                    await context.Response.WriteAsync(JsonSerializer.Serialize(dbUpdateExceptionResponse));
+                    
+                    break;
                 case IdNotFoundException idNotFoundException:
                     context.Response.StatusCode = StatusCodes.Status404NotFound;
+                    
                     var notFoundResponse = idNotFoundException.Message.ToError();
                     await context.Response.WriteAsync(JsonSerializer.Serialize(notFoundResponse));
+                    
                     break;
                 case ValidationException validationException:
                     context.Response.StatusCode = StatusCodes.Status422UnprocessableEntity;

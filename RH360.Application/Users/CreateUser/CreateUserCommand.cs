@@ -12,7 +12,7 @@ namespace RH360.Application.Users.CreateUser
             {
                 Name = createUserCommand.Name,
                 Email = createUserCommand.Email,
-                PasswordHash = PasswordHasher.HashPassword(createUserCommand.Password)
+                PasswordHash = Argon2PasswordHasher.HashPassword(createUserCommand.Password)
             };
 
         }

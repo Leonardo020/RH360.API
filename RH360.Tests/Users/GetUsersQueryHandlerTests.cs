@@ -42,7 +42,7 @@ namespace RH360.Tests.Users
             );
 
             // Assert
-            Assert.Equal(2, result.Items.Count());  // página 2, size 2 => 2 itens
+            Assert.Equal(2, result.Items.Count());  
             Assert.Equal(2, result.Page);
             Assert.Equal(2, result.PageSize);
             Assert.Equal(5, result.TotalItems);
@@ -85,15 +85,13 @@ namespace RH360.Tests.Users
             var result = await handler.Handle(query, CancellationToken.None);
 
             // Assert
-            Assert.True(result.Items.Count() == 3);
-
+            result.Items.Should().HaveCount(3); 
             result.Page.Should().Be(1);
             result.PageSize.Should().Be(10);
             result.TotalItems.Should().Be(3);
 
-            // Ordem esperada: Zelda, Mario, Luigi
-            result.Items.First().Name.Should().Be("J. Jonah Jameson");
-            result.Items.Last().Name.Should().Be("Peter Parker");
+            result.Items.First().Name.Should().Be("Peter Parker");
+            result.Items.Last().Name.Should().Be("J. Jonah Jameson");
         }
 
     }

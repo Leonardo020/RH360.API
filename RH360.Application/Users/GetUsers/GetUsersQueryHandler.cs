@@ -19,6 +19,7 @@ namespace RH360.Application.Users.GetUsers
             query = query.ApplyOrdering(pagination.OrderBy, pagination.OrderDirection);
 
             var users = await query
+                .Where(x => x.DeletedAt == null)
                 .Skip(pagination.Skip)
                 .Take(pagination.Take)
                 .Select(user => (GetUserDto)user)

@@ -13,7 +13,7 @@ namespace RH360.Application.Users.UpdateUser
             if (user is null)
                 return false;
 
-            user.PasswordHash = PasswordHasher.HashPassword(request.Password);
+            user.PasswordHash = Argon2PasswordHasher.HashPassword(request.Password);
             user.UpdatedAt = DateTime.UtcNow;
 
             await DbContext.SaveChangesAsync(cancellationToken);

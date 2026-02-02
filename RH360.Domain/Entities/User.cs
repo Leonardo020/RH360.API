@@ -19,7 +19,8 @@ namespace RH360.Domain.Entities
                 Id = user.Id,
                 Name = user.Name,
                 Email = user.Email,
-                CreatedAt = user.CreatedAt
+                CreatedAt = user.CreatedAt,
+                UpdatedAt = user.UpdatedAt
             };
         }
     }

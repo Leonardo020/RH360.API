@@ -98,39 +98,5 @@ namespace RH360.Tests.Users
 
             result.ShouldHaveValidationErrorFor(x => x.Email);
         }
-
-        //[Fact]
-        //public void Should_Fail_When_Password_Is_Empty()
-        //{
-        //    var command = new UpdateUserCommand(
-        //        Id: 1,
-        //        Name: "User",
-        //        Email: "email@test.com",
-        //        Password: ""
-        //    );
-
-        //    var result = _validator.TestValidate(command);
-
-        //    result.ShouldHaveValidationErrorFor(x => x.Password);
-        //}
-
-        //[Fact]
-        //public void Should_Fail_When_Password_Exceeds_MaxLength()
-        //{
-        //    var longHash = new string('H', 256);
-
-        //    var command = new UpdateUserCommand(
-        //        1,
-        //        "User",
-        //        "email@test.com",
-        //        longHash
-        //    );
-
-        //    var result = _validator.TestValidate(command);
-
-        //    result.ShouldHaveValidationErrorFor(x => x.Password);
-        //}
     }
-
-
 }

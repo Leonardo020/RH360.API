@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using RH360.API.Exceptions;
 using RH360.Infrastructure.Data.Context;
+using RH360.Infrastructure.Exceptions;
 
 namespace RH360.Application.Users.DeleteUser
 {
@@ -14,6 +14,9 @@ namespace RH360.Application.Users.DeleteUser
             ) ?? throw new IdNotFoundException("User");
 
             DbContext.Remove(user);
+
+            await DbContext.SaveChangesAsync(cancellationToken);
+
             return true;
         }
     }

@@ -2,6 +2,8 @@
 using RH360.Application.Users.GetUserById;
 using RH360.Domain.Entities;
 using RH360.Infrastructure.Data.Context;
+using RH360.Infrastructure.Exceptions;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace RH360.Tests.Users
 {
@@ -39,7 +41,7 @@ namespace RH360.Tests.Users
         // Using FluentAsertions
 
         [Fact]
-        public async Task Should_Return_Null_When_User_Not_Found()
+        public async Task Should_Throw_IdNotFoundException_When_User_Not_Found()
         {
             var db = DbContextHelper.CreateInMemoryDbContext("GetByIdNotFoundDb");
 
@@ -47,9 +49,9 @@ namespace RH360.Tests.Users
 
             var query = new GetUserByIdQuery(999);
 
-            var result = await handler.Handle(query, CancellationToken.None);
-
-            result.Should().BeNull();
+            await Assert.ThrowsAsync<IdNotFoundException>(() =>
+                handler.Handle(query, CancellationToken.None)
+            );
         }
     }
 }

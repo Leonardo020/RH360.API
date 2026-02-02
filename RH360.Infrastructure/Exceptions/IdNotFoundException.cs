@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace RH360.API.Exceptions
+namespace RH360.Infrastructure.Exceptions
 {
     public class IdNotFoundException : Exception
     {
