@@ -1,6 +1,0 @@
-@RH360.API_HostAddress = http://localhost:5100
-
-GET {{RH360.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

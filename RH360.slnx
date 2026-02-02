@@ -1,7 +1,0 @@
-<Solution>
-  <Project Path="RH360.API/RH360.API.csproj" />
-  <Project Path="RH360.Application/RH360.Application.csproj" Id="6130bc6c-58a7-4963-9b01-8ec8d4412e74" />
-  <Project Path="RH360.Domain/RH360.Domain.csproj" />
-  <Project Path="RH360.Infrastructure/RH360.Infrastructure.csproj" />
-  <Project Path="RH360.Tests/RH360.Tests.csproj" Id="6559130b-5ecc-4b05-9a04-8e820cf4f490" />
-</Solution>
